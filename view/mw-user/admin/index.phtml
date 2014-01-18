@@ -1,0 +1,27 @@
+<h1>Users</h1>
+<a class="btn btn-primary" href="<?php echo $this->url('zfcadmin/mwuseradmin', array('action' => 'edit')); ?>">New user</a>
+<table class="table">
+    <thead>
+        <tr>
+            <td>ID</td>
+            <th>Username</th>
+            <th>Aktionen</th>
+        </tr>
+    </thead>
+    <?php foreach($users as $user) : ?>
+        <?php $edit = $this->url('zfcadmin/mwuseradmin', array(
+            'action' => 'edit', 'id' => $user->getId()
+        )); ?>
+        <?php $delete = $this->url('zfcadmin/mwuseradmin', array(
+            'action' => 'delete', 'id' => $user->getId()
+        )); ?>
+        <tr>
+            <td><?php echo $user->getId();?></td>
+            <td><?php echo $user->getUsername();?></td>
+            <td>
+                <a href="<?php echo $edit; ?>">Bearbeiten</a> | 
+                <a href="<?php echo $delete; ?>">Löschen</a>
+            </td>
+        </tr>
+    <?php endforeach; ?>
+</table>

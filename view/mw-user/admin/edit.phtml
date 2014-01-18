@@ -1,0 +1,14 @@
+<h1>User</h1>
+
+<?php $form->setAttribute('method', 'post'); ?>
+<?php echo $this->form()->openTag($form) ?>
+    <?php foreach ($form as $element): ?>
+        <div class="form-group">
+            <?php echo $this->formrow($element); ?>
+        </div>
+    <?php endforeach ?>
+    
+    <?php if ($this->redirect): ?>
+        <input type="hidden" name="redirect" value="<?php echo $this->escapeHtml($this->redirect) ?>" />
+    <?php endif ?>
+<?php echo $this->form()->closeTag() ?>

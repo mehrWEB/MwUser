@@ -1,0 +1,12 @@
+{
+	"name" : "mehrweb/mwuser",
+	"description" : "ZF2 module for administration of users. Based on ZfcUser",
+	"authors" : [{
+			"name" : "Timo Ziemann",
+			"email" : "info@mehrweb.de",
+			"homepage" : "http://www.mehrweb.de"
+		}
+	],
+	"keywords" : [
+	]
+}
