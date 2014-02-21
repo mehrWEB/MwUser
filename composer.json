@@ -1,12 +1,20 @@
 {
-	"name" : "mehrweb/mwuser",
-	"description" : "ZF2 module for administration of users. Based on ZfcUser",
-	"authors" : [{
-			"name" : "Timo Ziemann",
-			"email" : "info@mehrweb.de",
-			"homepage" : "http://www.mehrweb.de"
-		}
-	],
-	"keywords" : [
-	]
+    "name" : "mehrweb/mwuser",
+    "description" : "ZF2 module for administration of users. Based on ZfcUser",
+    "authors" : [{
+        "name" : "Timo Ziemann",
+        "email" : "info@mehrweb.de",
+        "homepage" : "http://www.mehrweb.de"
+    }
+    ],
+    "keywords" : [
+    ],
+    "autoload": {
+        "psr-0": {
+            "MwUser": "src/"
+        },
+        "classmap": [
+            "./Module.php"
+        ]
+    }
 }
