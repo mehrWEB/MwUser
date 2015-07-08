@@ -9,6 +9,9 @@
     ],
     "keywords" : [
     ],
+    "require" : [
+        "zf-commons/zfc-user": "1.2.x"
+    ],
     "autoload": {
         "psr-0": {
             "MwUser": "src/"
