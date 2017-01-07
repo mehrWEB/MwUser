@@ -10,7 +10,7 @@
     "keywords" : [
     ],
     "require" : {
-        "zf-commons/zfc-user": "1.2.x"
+        "zf-commons/zfc-user": "1.4.x"
     },
     "autoload": {
         "psr-0": {
